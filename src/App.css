@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'Barlow-ExtraBold';
+  src: local('Barlow-ExtraBold'), url('./fonts/Barlow/Barlow-ExtraBold.ttf') format('truetype');
+  font-display: swap;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  border-radius: initial !important;
+  border-top-left-radius: inherit !important;
+  border-bottom-left-radius: inherit !important;
+  box-shadow: 0 0 0px 100px #101010 inset !important;
+  -webkit-box-shadow: 0 0 0px 100px #101010 inset !important;
+  -webkit-text-fill-color: #7c7c7c !important;
+}
+
+
+input::placeholder{
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 1;
+    transform: translateY(15px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(9px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-9px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-9px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(9px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(15px);
+  }
+}
+
+
+.test{
+  background: rgb(0 0 0 / 0.4) !important;
+  backdrop-filter: blur(10px) !important;
+}
+.test .MuiPaper-root{
+width: 560px !important;
+background: #000000;
+border: 0.5px solid #585858;
+border-radius: 5px;
+color: white;
+}
+.test .MuiButtonBase-root{
+  color: white !important
+}
+.test .MuiDialogTitle-root{
+  border-bottom: 0.5px solid #585858;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600;
+  font-size: 18px !important;
+  line-height: 27px;
+  color: white
+}
+.test .MuiTypography-root{
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: white
+}
+.test .MuiDialogContent-root{
+  text-align: center;
+  padding: 60px 24px;
+}
+
+.test .MuiDialogActions-root .MuiButtonBase-root{
+  font-size: 14px !important;
+  letter-spacing: 0.15em;
+  font-family: 'Poppins', sans-serif !important;
+  line-height: 21px;
+  border-radius: 50px;
+  margin-left: 16px;
+  padding: 10px 24px;
+  border: 1px solid #fff;
+  color: white !important;
+}
+.test .MuiButton-containedPrimary{
+  background: #FF5910 !important;
+  color: white !important;
+}
+.test:hover{
+  border: "1px solid #fff",
+
+}
+.test.Mui-disabled{
+  opacity: 0.3;
+  color: white !important;
+  border: "1px solid #fff",
+}
+.test .MuiDialogActions-root{
+  padding: 0px 26px 26px 26px !important;
+}
+.outdoor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.outdoor-icon {
+  padding-left: 12px
+}
+.flex-start {
+  align-items: flex-start !important;
+}
